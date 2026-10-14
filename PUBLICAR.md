@@ -35,7 +35,7 @@ Esta guía es para Laura: está en orden y sin términos técnicos innecesarios.
 5. **Authentication → Sign In / Providers**: desactiva *Allow new users to sign up*. Así nadie más puede crear cuenta.
 6. **Project Settings → API**: ahí están las tres llaves para Vercel (`Project URL`, `anon public` y `service_role`).
 
-> ⚠️ En el plan gratuito, Supabase **pausa el proyecto si pasa una semana sin uso**. Mientras estés probando no importa: se reactiva con un clic desde su panel. Con clientes reales ya no se pausa, porque hay actividad.
+> En el plan gratuito, Supabase pausa los proyectos sin actividad durante 7 días. El sitio ya trae una tarea diaria automática (Vercel Cron → `/api/keepalive`) que hace una consulta mínima para evitarlo. Si algún día se pausara, se reactiva con un clic desde el panel de Supabase (los datos se conservan 90 días).
 
 ## Paso 2 — Vercel (publicar) · Gratis para probar
 
